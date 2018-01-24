@@ -36,7 +36,6 @@ public class StartActivity extends AppCompatActivity {
                 startActivity(i1);
             }
         });
-
-
+        
     }
 }
