@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">AndroidLabs</string>
-    <string name="hello_message">你好!</string>
-    <string name="button_text">你好! </string>
+    <string name="hello_message">你好</string>
+    <string name="button_text">按钮</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="login_message">登入</string>
+    <string name="login_name">用户名</string>
+    <string name="pw">密码</string>
+    <string name="paw">密码</string>
+    <string name="radio_b">旋钮</string>
+    <string name="c_b">打钩</string>
+    <string name="sw">"这个干什么?"</string>
+
+    <string name="gl">"登入页"</string>
+    <string name="gi">"列表页"</string>
+    <string name="ga">"初始页"</string>
 </resources>

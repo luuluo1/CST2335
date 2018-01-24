@@ -2,4 +2,18 @@
     <string name="app_name">AndroidLabs</string>
     <string name="hello_message">Hello World!</string>
     <string name="button_text">I\’m a button</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="login_message">Login</string>
+    <string name="login_name">Login name</string>
+    <string name="pw">password</string>
+    <string name="paw">password</string>
+    <string name="radio_b">radio button</string>
+    <string name="c_b">check box</string>
+    <string name="sw">"What does this do?"</string>
+
+
+
+    <string name="gl">"Go to login"</string>
+    <string name="gi">"Go to list"</string>
+    <string name="ga">"Go to start"</string>
 </resources>
