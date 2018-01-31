@@ -12,8 +12,15 @@
     <string name="sw">"What does this do?"</string>
 
 
-
+    <string name="lgn">Login</string>
     <string name="gl">"Go to login"</string>
     <string name="gi">"Go to list"</string>
     <string name="ga">"Go to start"</string>
+    <string name="userName">"Go t</string>
+
+
+
+    <string name="q1">"Quit?"</string>
+    <string name="y1">"Yes"</string>
+    <string name="y2">"No"</string>
 </resources>

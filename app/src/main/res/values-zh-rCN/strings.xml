@@ -15,4 +15,10 @@
     <string name="gl">"登入页"</string>
     <string name="gi">"列表页"</string>
     <string name="ga">"初始页"</string>
+
+
+
+    <string name="q1">"退出?"</string>
+    <string name="y1">"是"</string>
+    <string name="y2">"否"</string>
 </resources>

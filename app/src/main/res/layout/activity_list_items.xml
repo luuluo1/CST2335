@@ -4,39 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-   android:columnCount="2"
-    android:rowCount="3"
+    android:columnCount="2"
+    android:rowCount="4"
+    android:layout_gravity="fill"
+    android:layout_columnWeight="2"
     tools:context="com.example.oliver.androidlabs.ListItemsActivity">
 
 
     <CheckBox
         android:id="@+id/checkBox6"
-        android:layout_width="190dp"
-        android:layout_height="wrap_content"
+        android:layout_gravity="fill"
         android:layout_column="0"
         android:layout_row="0"
         android:text="@string/c_b" />
 
     <RadioButton
         android:id="@+id/radioButton6"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
+    android:layout_gravity="fill"
         android:layout_column="1"
         android:layout_row="0"
         android:text="@string/radio_b" />
 
     <Switch
         android:id="@+id/switch3"
-        android:layout_width="190dp"
-        android:layout_height="41dp"
+
         android:layout_column="0"
         android:layout_row="1"
         android:text="@string/sw" />
 
     <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="132dp"
-        android:layout_height="match_parent"
+        android:id="@+id/img1"
+        android:layout_gravity="fill"
         android:layout_column="1"
         android:layout_row="1"
         android:src="@android:drawable/ic_menu_camera" />
@@ -50,12 +48,15 @@
         android:text="@string/ga" />
 
     <Button
+
         android:id="@+id/buttonGL"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_column="1"
         android:layout_row="2"
         android:text="@string/gl" />
+
+
 
 
 </GridLayout>
