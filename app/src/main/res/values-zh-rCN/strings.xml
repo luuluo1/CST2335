@@ -16,9 +16,12 @@
     <string name="gi">"列表页"</string>
     <string name="ga">"初始页"</string>
 
-
+    <string name="lgn">登入</string>
+    <string name="ssw1">"开"</string>
+    <string name="ssw2">"关"</string>
 
     <string name="q1">"退出?"</string>
     <string name="y1">"是"</string>
     <string name="y2">"否"</string>
+    <string name="r1">"回复"</string>
 </resources>
