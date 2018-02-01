@@ -27,8 +27,7 @@ public class ListItemsActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_items);
-        goL();
-        goA();
+
 
 
       b1=(ImageButton) findViewById(R.id.img1);
@@ -51,10 +50,10 @@ public class ListItemsActivity extends Activity {
                 int duration ;
 
                 if(s1.isChecked()) {
-                    text = "Switch is On";
+                    text = getResources().getString(R.string.ssw1);
                     duration = Toast.LENGTH_SHORT;
                 }else {
-                    text = "Switch is Off";
+                    text = getResources().getString(R.string.ssw2);
                     duration = Toast.LENGTH_LONG;
                 }
                  //this is the ListActivity
@@ -71,19 +70,21 @@ public class ListItemsActivity extends Activity {
                 if(ch1.isChecked()){
                     AlertDialog.Builder builder = new AlertDialog.Builder(ListItemsActivity.this);
                         // 2. Chain together various setter methods to set the dialog characteristics
-                    TextView t1 = findViewById(R.id.tv1);
+
                     Button b1=findViewById(R.id.bb1);
                     Button b2=findViewById(R.id.bb2);
-
-                    builder.setMessage("quiting?")
-                            .setTitle("are you")
-                            .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    builder.setMessage(R.string.q1)
+                            .setTitle(R.string.q1)
+                            .setPositiveButton(R.string.y1, new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int id) {
                                     // User clicked OK button
+                                    Intent resultIntent = new Intent();
+                                    resultIntent.putExtra("Response", getResources().getString(R.string.r1));
+                                    setResult(Activity.RESULT_OK, resultIntent);
                                     finish();
                                 }
                             })
-                            .setNegativeButton("cancel", new DialogInterface.OnClickListener() {
+                            .setNegativeButton(R.string.y2, new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int id) {
                                     // User cancelled the dialog
                                 }
@@ -122,32 +123,6 @@ public class ListItemsActivity extends Activity {
     protected void 	onDestroy(){super.onDestroy();
         final String ACTIVITY_NAME = "DestroyActivity";
         Log.i(ACTIVITY_NAME, "In onDestroy()");}
-
-
-
-
-    private void goL(){
-        Button b1=(Button) findViewById(R.id.buttonGL);
-
-        b1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-              Intent i1=new Intent(getApplicationContext(),LoginActivity.class);
-                startActivity(i1);
-           }
-        });}
-        private void goA(){
-    Button b1=(Button) findViewById(R.id.buttonGA);
-    b1.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
-            Intent i1=new Intent(ListItemsActivity.this,StartActivity.class);
-            startActivity(i1);
-        }
-    });
-
-
-    }
 
 
 }
