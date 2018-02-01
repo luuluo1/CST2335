@@ -12,34 +12,13 @@ import android.widget.EditText;
 
 public class LoginActivity extends Activity {
     EditText username;
-
+    final String ACTIVITY_NAME = "LoginActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-
-
-        Button b1 = (Button) findViewById(R.id.gi);
-        b1.setOnClickListener(new View.OnClickListener(
-        ) {
-            @Override
-            public void onClick(View view) {
-                Intent i1 = new Intent(LoginActivity.this, ListItemsActivity.class);
-                startActivity(i1);
-            }
-        });
-
-        Button b2 = (Button) findViewById(R.id.ga);
-        b2.setOnClickListener(new View.OnClickListener(
-        ) {
-            @Override
-            public void onClick(View view) {
-                Intent i1 = new Intent(LoginActivity.this, StartActivity.class);
-                startActivity(i1);
-            }
-        });
 
         username = (EditText) findViewById(R.id.userName1);
 
@@ -63,19 +42,19 @@ public class LoginActivity extends Activity {
     }
 
     protected void 	onResume(){super.onResume();
-        final String ACTIVITY_NAME = "ResumeActivity";
+
         Log.i(ACTIVITY_NAME, "In onResume()");
     }
-    protected void onStart(){super.onStart();  final String ACTIVITY_NAME = "StartActivity";
+    protected void onStart(){super.onStart();
         Log.i(ACTIVITY_NAME, "In onStart()");}
     protected void 	onPause(){super.onPause();
-        final String ACTIVITY_NAME = "PauseActivity";
+
         Log.i(ACTIVITY_NAME, "In onPause()");}
     protected void 	onStop(){super.onStop();
-        final String ACTIVITY_NAME = "StopActivity";
+
         Log.i(ACTIVITY_NAME, "In onStop()");}
     protected void 	onDestroy(){super.onDestroy();
-        final String ACTIVITY_NAME = "DestroyActivity";
+
         Log.i(ACTIVITY_NAME, "In onDestroy()");}
 
 }
