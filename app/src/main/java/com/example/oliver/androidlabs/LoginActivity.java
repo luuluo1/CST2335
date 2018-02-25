@@ -22,8 +22,8 @@ public class LoginActivity extends Activity {
 
         username = (EditText) findViewById(R.id.userName1);
 
-        SharedPreferences sp1=getSharedPreferences("MyData", Context.MODE_PRIVATE);
-      final  SharedPreferences.Editor ed1=sp1.edit();
+        SharedPreferences sp1=getSharedPreferences("MyData", MODE_PRIVATE);
+        final  SharedPreferences.Editor ed1=sp1.edit();
         ed1.commit();
        String s1=sp1.getString("name","email@domain.com");
        username.setText(s1);
