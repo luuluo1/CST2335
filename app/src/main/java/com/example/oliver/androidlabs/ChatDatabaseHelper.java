@@ -14,7 +14,7 @@ import java.security.Key;
 public class ChatDatabaseHelper extends SQLiteOpenHelper {
 
    public static final String DATABASE_NAME = "Messages.db";
-    public static final  int VERSION_NUM = 100;
+    public static final  int VERSION_NUM = 101;
     public static final   String KEY_ID = "_id";
     public static final  String KEY_MESSAGE="Message" ;
     public static final String TABLE_NAME ="messages_table";
@@ -29,7 +29,6 @@ public class ChatDatabaseHelper extends SQLiteOpenHelper {
 
     ChatDatabaseHelper(Context ctx) {
         super(ctx, DATABASE_NAME, null, VERSION_NUM);
-
     }
 
     @Override
@@ -40,9 +39,8 @@ public class ChatDatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
-        sqLiteDatabase.execSQL("DROP TABLE IF EXISTS" + sqLiteDatabase);
+        sqLiteDatabase.execSQL("DROP TABLE IF EXISTS messages_table");
         onCreate(sqLiteDatabase);
         Log.i("ChatDatabaseHelper", "Calling onUpgrade, oldVersion=" + i + " newVersion=" + i1);
     }
-
 }
