@@ -22,7 +22,7 @@ import java.nio.charset.spi.CharsetProvider;
 import java.util.ArrayList;
 
 public class ChatWindow extends AppCompatActivity {
-     EditText editText1;
+    EditText editText1;
     ArrayList<String> ChatList;
     LayoutInflater inflater;
     Button send;
@@ -68,11 +68,8 @@ String ACTIVITY_NAME ="ChatWindow";
                 database.insert(ChatDatabaseHelper.TABLE_NAME, "null", contentValues);
                 editText1.setText("");
                 messageAdapter.notifyDataSetChanged();
-
             }
         });
-
-
 
     }
     private class ChatAdapter extends ArrayAdapter<String> {
